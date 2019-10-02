@@ -1,0 +1,35 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.airbloc.org/v1/purchase-event.json",
+  "type": "object",
+  "title": "Purchase Event Data",
+  "required": [
+    "productId"
+  ],
+  "properties": {
+    "productId": {
+      "$id": "#/properties/productId",
+      "type": "string",
+      "title": "Product ID"
+    },
+    "value": {
+      "$id": "#/properties/value",
+      "type": "number",
+      "title": "Total Value",
+      "description": "Total Value of the purchasement"
+    },
+    "transactionId": {
+      "$id": "#/properties/transactionId",
+      "type": "string",
+      "title": "Transaction ID"
+    },
+    "currency": {
+      "$id": "#/properties/currency",
+      "type": "string",
+      "title": "Currency",
+      "description": "ISO 4217 currency code of the payment",
+      "pattern": "^[A-Z]{3}$"
+    }
+  }
+}
