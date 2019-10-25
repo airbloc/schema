@@ -1,0 +1,65 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schema.airbloc.org/v1/public-transport.json",
+  "type": "object",
+  "title": "Public Transport Event",
+  "description": "Real-time event of the public transportations.",
+  "required": [
+    "contentId"
+  ],
+  "properties": {
+    "type": {
+      "$id": "#/properties/type",
+      "type": "string",
+      "enum": ["in", "off"],
+      "title": "Event Type"
+    },
+    "transportName": {
+      "$id": "#/properties/transportName",
+      "type": "string",
+      "title": "Transport Name",
+      "description": "Name of the transportation"
+    },
+    "transportType": {
+      "$id": "#/properties/transportType",
+      "type": "string",
+      "title": "Transport Type",
+      "description": "Type of the transportation"
+    },
+    "stationName": {
+      "$id": "#/properties/stationName",
+      "type": "string",
+      "title": "Station Name",
+      "description": "Name of the station where the event occured"
+    },
+    "stationCode": {
+      "$id": "#/properties/stationCode",
+      "type": "string",
+      "title": "Station Code",
+      "description": "Public code of the station where the event occured"
+    },
+    "stationLat": {
+      "$id": "#/properties/stationLat",
+      "type": "number",
+      "title": "Station Latitude"
+    },
+    "stationLng": {
+      "$id": "#/properties/stationLat",
+      "type": "number",
+      "title": "Station Longitude"
+    },
+    "stationBusStopId": {
+      "$id": "#/properties/stationBusStopId",
+      "type": "string",
+      "title": "Station Bus Stop ID",
+      "description": "Bus Stop ID if the transportation is bus"
+    },
+    "amount": {
+      "$id": "#/properties/categoryId",
+      "type": "number",
+      "title": "Amount",
+      "description": "Amount of the transportation cost"
+    }
+  }
+}
