@@ -6,7 +6,7 @@
   "title": "Public Transport Event",
   "description": "Real-time event of the public transportations.",
   "required": [
-    "contentId"
+    "type"
   ],
   "properties": {
     "type": {
